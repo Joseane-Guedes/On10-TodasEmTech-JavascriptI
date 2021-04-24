@@ -35,16 +35,16 @@ margin-right: 90px;
 margin-left: 90px;
 */
 
-/* Formulario  */
+/* Estilização do Formulario  */
 label {
 	font-size: 16px;
 	padding-bottom: 5px;
 }
 
 input {
-	margin-bottom: 15px;
-	padding: 5px;
-	border-color: rgb(163, 102, 10);
+	margin-bottom: 20px;
+	padding: 10px;
+	border-color: #4baec1;
 }
 
 .formulario {
@@ -54,18 +54,11 @@ input {
 	text-align: left;
 	flex-direction: column;
 	background-color: #dbc2cf;
-
 	margin: 0 100px 0 100px;
 }
 
-.titulo--formulario {
-	font-size: 28px;
-	text-align: center;
-	color: antiquewhite;
-}
-
 .textoformulario {
-	padding: 10px;
+	padding: 15px;
 	display: flex;
 	flex-direction: column;
 }
