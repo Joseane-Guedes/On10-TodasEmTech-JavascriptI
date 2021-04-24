@@ -1,5 +1,6 @@
-<!DOCTYPE html> 
+<!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,80 +8,80 @@
     <title>Biblioteca</title>
     <link rel="stylesheet" href="style/style.css">
 </head>
+
 <body>
- <header>
-        <h1>📚 Biblioteca Virtual 📚 </h1>
-        <h2> Livros </h2>
+    <header>
+        <h1>📚 Biblioteca 📚 </h1>
+        <h2> Formulário </h2>
     </header>
-    
-     <!--Inicio do Formulario -->
+
+    <!--Inicio do Formulario -->
     <main>
-    <section class="container-form" >
+            <form action="" class="formulario" onsubmit="exibirDados (event)">
 
-            <form action="" class="form" onsubmit="exibirDados (event)">
-                
-                <div class="topicos_form">
+                <div class="textoformulario">
                     <label for="titulo">
-                        Título
+                        Título*
                     </label>
-                    <input type="text" id="titulo" placeholder="Digite o título do Livro" onfocus=this.value='' required>
-                </div>
-                
+                    <input type="text" id="titulo" placeholder="Digite o título do Livro" onfocus=this.value=''
+                        required>
+               
 
-                <div class="topicos_form">
+
                     <label for="autor">
-                        Autor
+                        Autor(a)*
                     </label>
                     <input type="autor" id="autor" placeholder="Digite o autor do Livro" onfocus=this.value='' required>
-                </div>
+             
 
-                <div class="topicos_form">
-                    <label for="isbn" >
-                        ISBN
+                    <label for="isbn">
+                        ISBN*
                     </label>
                     <input type="number" id="isbn" placeholder="Digite o ISBN do Livro">
-                </div>
+             
 
-                <div class="topicos_form">
+               
                     <label for="paginas">
-                        Páginas
+                        Páginas*
                     </label>
                     <input type="number" id="paginas" placeholder="Número de páginas">
-                </div>
+             
 
-                <div class="topicos_form">
+              
                     <label for="dataPublicacao">
-                        Data de Publicação
+                        Data de Publicação*
                     </label>
                     <input type="date" id="dataPublicacao" onfocus=this.value='' required>
-                </div>
+                </div> <!--Deixa essa div aqui-->
 
-                <div class="topicos_form">
-                    <input type="submit" class="button" name="enviar" id="botaoDeEnviar" value="Adicionar Livro">
+                <div class="textoformulario">
+                    <input type="submit" class="button" name="enviar" id="botaoDeEnviar" value="Incluir Livro">
                 </div>
 
             </form>
-        </section>
+       
+<!--seção tabela começa aqui-->
+            <table class="tabela" id="resposta">
+                <thead class="cabecalho--tabela">
+                <tr>
+                    <th>Título</th>
+                    <th>Autor(a)</th>
+                    <th>ISBN</th>
+                    <th>Data de Publicação</th>
+                    <th>Páginas</th>
+                    <th>Data de Cadastro</th>
+                </tr>
+                </thead>
+            </table>
 
- <section>
-<table class="tabela" id="resposta">
-<tr>
-    <th>Título</th>
-    <th>Autor</th>
-    <th>ISBN</th>
-    <th>Data de Publicação</th>
-    <th>Páginas</th>
-    <th>Data de Cadastro</th>
-</tr>
-</table>
-
-    <div class="excluirEbook">
-        <input type="button" class="botaoExcluir" id="botaoDelete" name="excluir" value="Deletar Livro">
-    </div>
+            <div class="excluirEbook">
+                <input type="button" class="botaoExcluir" id="botaoDelete" name="excluir" value="Deletar Livro">
+            </div>
 
         </section>
 
     </main>
     <script src="script/script.js"></script>
 </body>
+
 </html>
