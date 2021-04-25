@@ -1,7 +1,7 @@
 function exibirDados (event) {
     event.preventDefault();
 
-    let pegaAutor = document.getElementById('autor').value;
+    let pegaAutor = document.querySelector('#autor').value;
     let pegaTítulo = document.querySelector('#titulo').value;
     let pegaISBN = document.querySelector('#isbn').value;
     let pegaPaginas = document.querySelector('#paginas').value;
@@ -23,16 +23,18 @@ function exibirDados (event) {
 }
 
 function limpardados () {
-    document.getElementById('titulo').value="";
     document.getElementById('autor').value="";
+    document.getElementById('titulo').value="";
     document.getElementById('isbn').value="";
     document.getElementById('dataPublicacao').value="";
     document.getElementById('paginas').value="";
 
 }
 
-document.querySelector("#botaoDelete").addEventListener('click', function exluirLivro (event) {
+document.querySelector("#botaoDelete").addEventListener('click', function deletarLivro (event) {
     event.preventDefault();
 
     document.getElementById('tabelaDeLivro').remove();
 })
+
+
