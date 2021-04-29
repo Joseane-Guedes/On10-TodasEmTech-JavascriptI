@@ -8,17 +8,10 @@
     <title>Biblioteca</title>
     <link rel="stylesheet" href="style/style.css">
 </head>
-
 <body>
-    <header>
-        <h1>📚 Biblioteca 📚 </h1>
-        <h2> Formulário </h2>
-    </header>
-
-    <!--Inicio do Formulario -->
-    <main>
-            <form action="" class="formulario" onsubmit="exibirDados (event)">
-
+      <main>
+            <form class="formulario" onsubmit="exibirDados (event)">
+                <h1 class = "tituloformulario">📚 Biblioteca 📚 </h1>
                 <div class="textoformulario">
                     <label for="titulo">
                         Título*
@@ -55,14 +48,14 @@
                 </div> <!--Deixa essa div aqui-->
 
                 <div class="textoformulario">
-                    <input type="submit" class="button" name="enviar" id="botaoDeEnviar" value="Incluir Livro">
+                    <input type="submit" class="button" name="enviar" id="botaoDeEnviar" value="ENVIAR">
                 </div>
 
             </form>
        
 <!--seção tabela começa aqui-->
             <table class="tabela" id="resposta">
-                <thead class="">
+                <thead class="cabecalhotabela">
                 <tr>
                     <th>Título</th>
                     <th>Autor(a)</th>
@@ -75,13 +68,13 @@
             </table>
 
             <div class="excluirLivro">
-                <input type="button" class="botaoExcluir" id="botaoDelete" name="excluir" value="Deletar Livro">
+                <input type="button" class="botaoExcluir" id="botaoDelete" name="excluir" value="EXCLUIR">
             </div>
 
         </section>
     </main>
-      <footer style="text-align:center">
-            Projeto feito por Joseane Guedes com 💜.  ©Reprograma
+      <footer  style="color:white; text-align:center" >
+            Projeto feito com 💜 por Joseane Guedes e ©Reprograma.
         </footer>
     <script src="script/script.js"></script>
 </body>

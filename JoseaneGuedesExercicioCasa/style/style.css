@@ -6,33 +6,9 @@
 }
 
 body {
-	background-color: #c4dacf;
-}
+	background-image: linear-gradient(#e0c3fc, #8ec5fc, #ba7af8);
 
-header {
-	padding: 50px;
-	text-align: center;
-	background: #6d4ba3;
-	color: white;
-	font-size: 1.5rem;
-	text-align: center;
-	font-family: Verdana, Geneva, Tahoma, sans-serif;
-	margin-right: 90px;
-	margin-left: 90px;
-	border: 5px solid black;
 }
-
-/*
-Em analise:
-height: 6em;
-border: 1px solid black;
-margin-top: auto;
-margin-bottom: 100px;
-margin-right: 90px;
-margin-left: 90px;
-display: flex;
-flex-direction: column;
-*/
 
 /* Estilização do Formulario  */
 label {
@@ -46,6 +22,11 @@ input {
 	border-color: #4baec1;
 }
 
+.tituloformulario {
+	font-size: 2rem;
+	color: whitesmoke;
+	text-align: center;
+}
 
 .formulario {
 	padding: 50px 20px 30px 20px;
@@ -66,7 +47,7 @@ input {
 
 /*TABELA*/
 table {
-  letter-spacing: normal;
+	letter-spacing: normal;
 	width: 100%;
 	padding: 5%;
 	text-align: center;
@@ -95,25 +76,21 @@ td {
 }
 
 .excluirLivro {
-  color: white;
-  padding: 15px 32px;
-  text-align: center;
-  font-size: 3rem;
-	margin-top: 20px;
-
-/* .button {
 	color: white;
-  padding: 15px 32px;
-  text-align: center;
-  font-size: 5rem;
+	padding: 15px 32px;
+	text-align: center;
+	font-size: 3rem;
 	margin-top: 20px;
-} */
 
-/*RESPONSIVIDADE*/
 
-/* @media (min-width: 768px) {
-    .header{
-        height: 100px;
-    } */
+	/*RESPONSIVIDADE*/
+
+	@media screen and (max-width: 768px) {
+
+		body {
+			background-color: red;
+		}
+	
+	}
 
 	
